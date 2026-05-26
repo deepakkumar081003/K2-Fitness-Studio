@@ -1,5 +1,10 @@
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight, Camera, Play } from 'lucide-react';
+import service3 from '../images/services/service3.jpg';
+import gallery1 from '../images/gallery/gallery1.jpg';
+import gallery2 from '../images/gallery/gallery2.webp';
+import gallery3 from '../images/gallery/gallery3.webp';
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -8,7 +13,7 @@ const Gallery = () => {
     {
       id: 1,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery1,
       title: 'Modern Equipment Zone',
       category: 'Equipment',
       featured: true,
@@ -16,7 +21,7 @@ const Gallery = () => {
     {
       id: 2,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery2,
       title: 'Cardio Training Area',
       category: 'Facility',
       featured: true,
@@ -24,7 +29,7 @@ const Gallery = () => {
     {
       id: 3,
       type: 'image',
-      src: 'https://images.pexels.com/photo-6289045/pexels-photo-6289045.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery3,
       title: 'Personal Training Session',
       category: 'Training',
       featured: false,
@@ -32,7 +37,7 @@ const Gallery = () => {
     {
       id: 4,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: service3,
       title: 'Strength Training Zone',
       category: 'Equipment',
       featured: false,
@@ -40,7 +45,7 @@ const Gallery = () => {
     {
       id: 5,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery1,
       title: 'Free Weights Section',
       category: 'Equipment',
       featured: false,
@@ -48,7 +53,7 @@ const Gallery = () => {
     {
       id: 6,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery2,
       title: 'Group Training Area',
       category: 'Training',
       featured: true,
@@ -56,7 +61,7 @@ const Gallery = () => {
     {
       id: 7,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery3,
       title: 'Locker Room',
       category: 'Facility',
       featured: false,
@@ -64,7 +69,7 @@ const Gallery = () => {
     {
       id: 8,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: service3,
       title: 'Reception Area',
       category: 'Facility',
       featured: false,
@@ -72,7 +77,7 @@ const Gallery = () => {
     {
       id: 9,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery1,
       title: 'Isolation Machines',
       category: 'Equipment',
       featured: false,
@@ -80,7 +85,7 @@ const Gallery = () => {
     {
       id: 10,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery2,
       title: 'Training in Progress',
       category: 'Training',
       featured: false,
@@ -88,7 +93,7 @@ const Gallery = () => {
     {
       id: 11,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: gallery3,
       title: 'Premium Dumbbells',
       category: 'Equipment',
       featured: false,
@@ -96,7 +101,7 @@ const Gallery = () => {
     {
       id: 12,
       type: 'image',
-      src: 'https://images.pexels.com/photo-1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800',
+      src: service3,
       title: 'Evening Workout',
       category: 'Atmosphere',
       featured: false,
@@ -136,7 +141,7 @@ const Gallery = () => {
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1920"
             alt="Gallery Background"
             className="w-full h-full object-cover"
           />
@@ -247,7 +252,7 @@ const Gallery = () => {
 
           <div className="relative rounded-2xl overflow-hidden bg-gray-800 aspect-video max-w-4xl mx-auto group cursor-pointer">
             <img
-              src="https://images.pexels.com/photo-1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=1200"
+              src={service3}
               alt="Virtual Tour Thumbnail"
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Dumbbell, Phone } from 'lucide-react';
+import { Menu, X, Dumbbell, Phone, MessageCircle } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,6 +26,10 @@ const Header = () => {
     { path: '/gallery', label: 'Gallery' },
     { path: '/contact', label: 'Contact' },
   ];
+  const whatsappMessage = encodeURIComponent(
+    'Hi K2 Fitness Studio, I would like to know more about your membership plans.'
+  );
+  const whatsappLink = `https://wa.me/918122126376?text=${whatsappMessage}`;
 
   const isActive = (path: string) => location.pathname === path;
 
@@ -83,6 +87,19 @@ const Header = () => {
               <Phone className="h-4 w-4" />
               <span>Call Now</span>
             </a>
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`ml-2 flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${
+                isScrolled
+                  ? 'bg-green-500 text-white hover:bg-green-600 shadow-md hover:shadow-lg'
+                  : 'bg-green-500 text-white hover:bg-green-600'
+              }`}
+            >
+              <MessageCircle className="h-4 w-4" />
+              <span>WhatsApp</span>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -119,6 +136,15 @@ const Header = () => {
               >
                 <Phone className="h-4 w-4" />
                 <span>Call: 081221 26376</span>
+              </a>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2 px-4 py-3 mt-2 bg-green-500 text-white rounded-xl font-semibold hover:bg-green-600 transition-colors"
+              >
+                <MessageCircle className="h-4 w-4" />
+                <span>WhatsApp Us</span>
               </a>
             </nav>
           </div>

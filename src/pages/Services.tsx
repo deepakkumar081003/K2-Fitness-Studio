@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Dumbbell, Users, Heart, Zap, Target, Trophy,
+  Dumbbell, Users, Heart, Zap, Target,
   Check, Star, Clock, Calendar, Shield, Award,
-  ArrowRight, ChevronDown, Phone
+  ArrowRight, Phone
 } from 'lucide-react';
+import service3 from '../images/services/service3.jpg';
+import gallery2 from '../images/gallery/gallery2.webp';
+import gallery3 from '../images/gallery/gallery3.webp';
 
 const Services = () => {
   const [activeTab, setActiveTab] = useState('all');
@@ -53,7 +56,7 @@ const Services = () => {
         'Breathing techniques',
         'All levels welcome',
       ],
-      image: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: service3,
     },
     {
       id: 4,
@@ -68,7 +71,7 @@ const Services = () => {
         'Injury prevention focus',
         'Progressive programs',
       ],
-      image: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: gallery2,
     },
     {
       id: 5,
@@ -83,7 +86,7 @@ const Services = () => {
         'Rowing machines',
         'Personalized cardio plans',
       ],
-      image: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: gallery3,
     },
     {
       id: 6,
@@ -98,7 +101,7 @@ const Services = () => {
         'Healthy eating guidance',
         'Regular follow-ups',
       ],
-      image: 'https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: service3,
     },
   ];
 
@@ -167,7 +170,7 @@ const Services = () => {
       <section className="relative pt-32 pb-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="https://images.pexels.com/photo-1552242918-8cb5423e8fa8.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800"
             alt="Gym Background"
             className="w-full h-full object-cover"
           />
@@ -337,7 +340,7 @@ const Services = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photo-1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={service3}
                 alt="K2 Fitness Facilities"
                 className="rounded-2xl shadow-2xl"
               />

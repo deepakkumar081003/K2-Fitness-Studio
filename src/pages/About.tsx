@@ -3,6 +3,7 @@ import {
   Target, Heart, Users, Award, Star, CheckCircle2,
   Dumbbell, Trophy, Clock, Shield
 } from 'lucide-react';
+import service3 from '../images/services/service3.jpg';
 
 const About = () => {
   const values = [
@@ -40,21 +41,21 @@ const About = () => {
       name: 'Expert Trainers',
       role: 'Certified Professionals',
       description: 'Our trainers provide personalized guidance, daily workout plans via WhatsApp, and ensure proper form.',
-      image: 'https://images.pexels.com/photo-6289045/pexels-photo-6289045.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: service3,
       icon: Dumbbell,
     },
     {
       name: 'Support Staff',
       role: 'Friendly & Helpful',
       description: 'Our team ensures a welcoming environment and assists with any queries or needs.',
-      image: 'https://images.pexels.com/photo-7869093/pexels-photo-7869093.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: service3,
       icon: Users,
     },
     {
       name: 'Management',
       role: 'Quality Focused',
       description: 'Committed to maintaining the highest standards of cleanliness and service.',
-      image: 'https://images.pexels.com/photo-7455103/pexels-photo-7455103.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: service3,
       icon: Award,
     },
   ];
@@ -139,7 +140,7 @@ const About = () => {
 
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={service3}
                 alt="K2 Fitness Studio"
                 className="rounded-2xl shadow-2xl"
               />
@@ -247,7 +248,7 @@ const About = () => {
               >
                 <div className="relative h-48 overflow-hidden">
                   <img
-                    src={member.image}
+                    src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=1920"
                     alt={member.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
@@ -290,7 +291,7 @@ const About = () => {
 
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src={service3}
                 alt="K2 Fitness Features"
                 className="rounded-2xl shadow-2xl"
               />

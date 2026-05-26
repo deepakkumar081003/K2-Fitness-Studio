@@ -23,13 +23,13 @@ const Footer = () => {
             </p>
             <div className="flex space-x-3">
               <a
-                href="#"
+                href="https://www.facebook.com/karthikeyanfitnessstudio/"
                 className="p-2 bg-gray-800 rounded-lg hover:bg-orange-500 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/k2_fitness_studio/?hl=en"
                 className="p-2 bg-gray-800 rounded-lg hover:bg-orange-500 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
